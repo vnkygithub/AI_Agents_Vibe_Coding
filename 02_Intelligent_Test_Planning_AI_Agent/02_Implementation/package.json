@@ -1,0 +1,22 @@
+{
+  "name": "test-plan-creator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n api,web \"node src/backend/server.js\" \"vite\"",
+    "server": "node src/backend/server.js",
+    "web": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "marked": "^12.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.10"
+  }
+}
